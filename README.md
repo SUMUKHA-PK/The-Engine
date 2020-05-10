@@ -42,3 +42,11 @@ Something I'd like to call a bot. This will always be active when my Linux is bo
 * A good notification pusher for ubuntu - https://www.maketecheasier.com/desktop-notifications-for-linux-command/
 * Since I want to make concurrent command processing, some kind of garbage collection should happen based on the timestamps of the commands running.
 * Above demand needs to have a well structured logger of all the commands being run and must be able to cancel them, report their errors. (maybe use context?)
+
+
+## How to start
+
+* Install docker
+* Pull the redis docker image - `docker pull redis`; use sudo if necessary.
+* Start the docker image `docker run -p:6379:6379 --name The-Engine-Redis -d redis`
+* Restarting is `docker restart The-Engine-Redis`
